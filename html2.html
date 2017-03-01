@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+   <style>
+       body {
+           font-family: "微软雅黑";
+           background-color: #DEDEDE;
+           margin: 0;
+           padding: 0;
+       }
+       .header,
+       .footer {
+           height: 60px;
+           width: 100%;
+           margin: 0px auto;
+           background-color: #333;
+       }
+
+       .nav {
+           float: right;
+       }
+
+       .navbar {
+           float: left;
+           margin-left: 30px;
+       }
+
+       .header li {
+           float: left;
+           width: 100px;
+       }
+
+       .header li a {
+           text-decoration: none;
+           color: white;
+           font-size: 14px;
+       }
+       /*Article*/
+
+       .article,
+       .picture {
+           margin: 30px;
+           border-bottom: 2px solid #999;
+           border-right: 2px solid #999;
+           background-color: white;
+           padding: 20px;
+       }
+
+       .title-1st {
+           margin-top: 0px;
+           font-size: 20px;
+           font-weight: bold;
+       }
+
+       .title-2ed {
+           font-size: 16px;
+           font-weight: bold;
+           color: #999;
+       }
+
+       .author,
+       .hint {
+           font-size: 12px;
+           color: #999;
+       }
+
+       .content {
+           text-indent: 2em;
+       }
+       /*picture*/
+
+       .images {
+           margin-left: 2em;
+       }
+
+       .image {
+           border: 1px solid #ccc;
+           text-align: center;
+           width: 180px;
+           height: 180px;
+           padding: 0px 5px 10px;
+       }
+
+       .image img {
+           width: 70%;
+           height: 70%
+       }
+       /*Table*/
+
+       .table1 table,
+       .table1 th,
+       .table1 tr,
+       .table1 td {
+           border-collapse: collapse;
+           border: 1px solid #ccc;
+       }
+
+       .table1 table {
+           width: 100%;
+           text-align: left;
+       }
+
+       .table1 th {
+           background-color: black;
+           color: white;
+       }
+
+       table .total {
+           font-weight: bold;
+           background-color: #ccc;
+       }
+       /*Form*/
+
+       .active {
+           border-left: 2px solid #777;
+           padding-left: 10px;
+       }
+
+       .table2 td {
+           width: 10%;
+       }
+
+       .table2 .left {
+           text-align: right;
+       }
+       .submit {
+           width: 95%;
+           height: 40px;
+           border-radius: 10px;
+           background-color: #3355D0;
+           margin:0 auto;
+       }
+
+       .submit p {
+           color: white;
+           font-weight: bold;
+           text-align: center;
+           padding-top:8px;
+       }
+       /*Footer*/
+       .footer p{
+           text-align: center;
+           padding-top: 15px;
+           color: white;
+           font-weight: bold;
+       }
+   </style>
+</head>
+<body>
+<div class="header">
+    <div class="navbar">
+        <img src=" https://timgsa.baidu.com/timg?image&quality=80&size=b10000_10000&sec=1488336252&di=7ac1c45bc5492a506e4c4a2df4c904fa&src=http://www.gk169.com/file/upload/201303/26/2012070410245784.jpg" width="60px" height="60px" />
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="#">导航链接一</a></li>
+            <li><a href="#">导航链接二</a></li>
+            <li><a href="#">导航链接三</a></li>
+            <li><a href="#">导航链接四</a></li>
+        </ul>
+    </div>
+</div>
+<div class="article">
+    <p class="title-1st">文章一级标题</p>
+    <p class="title-2ed">文章二级标题</p>
+    <p class="author">文章作者&nbsp;文章发表时间</p>
+    <p class="content">这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了
+        <br/> 这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了
+        <br/> 这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，
+        <a href="http:/ife.baidu.com">这里有一个链接连到百度前端技术学院</a>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。
+    </p>
+    <img src="http://7xqijt.com1.z0.glb.clouddn.com/IFE%E7%AC%91%E8%84%B8.jpg" alt="岳云鹏魔性笑脸" width="300px" height="250px" />
+    <p class="content">这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了
+        <br/> 这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，
+        <a href="http:/ife.baidu.com" target="_blank">这里有一个链接点击后打开新窗口到百度前端技术学院</a>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。
+    </p>
+</div>
+<div class="article">
+    <p class="title-1st">另一篇文章一级标题</p>
+    <p class="title-2ed">文章二级标题</p>
+    <p class="author">文章作者&nbsp;文章发表时间</p>
+    <p class="content">
+        这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了
+        <br/> 这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了
+        <br/> 这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，
+        <a href="http:/ife.baidu.com">这里有一个链接连到百度前端技术学院</a>这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有粗体字</strong>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。
+    </p>
+    <img src="http://7xqijt.com1.z0.glb.clouddn.com/IFE%E7%AC%91%E8%84%B8.jpg" alt="岳云鹏魔性笑脸" width="300px" height="250px" />
+    <ul>
+        <li>列表项目一</li>
+        <li>列表项目二</li>
+        <li>列表项目三</li>
+    </ul>
+</div>
+<div class="picture">
+    <p class="title-1st">图片</p>
+    <div class="images">
+        <div class="image">
+            <p>好看的图片</p><img src="http://7xqijt.com1.z0.glb.clouddn.com/IFE%E7%AC%91%E8%84%B8.jpg" alt="岳云鹏魔性笑脸" />
+        </div>
+        <div class="image">
+            <p>好看的图片</p><img src="http://7xqijt.com1.z0.glb.clouddn.com/IFE%E7%AC%91%E8%84%B8.jpg" alt="岳云鹏魔性笑脸" />
+        </div>
+        <div class="image">
+            <p>好看的图片</p><img src="http://7xqijt.com1.z0.glb.clouddn.com/IFE%E7%AC%91%E8%84%B8.jpg" alt="岳云鹏魔性笑脸" />
+        </div>
+        <div class="image">
+            <p>好看的图片</p><img src="http://7xqijt.com1.z0.glb.clouddn.com/IFE%E7%AC%91%E8%84%B8.jpg" alt="岳云鹏魔性笑脸" />
+        </div>
+        <div class="image">
+            <p>好看的图片</p><img src="http://7xqijt.com1.z0.glb.clouddn.com/IFE%E7%AC%91%E8%84%B8.jpg" alt="岳云鹏魔性笑脸" />
+        </div>
+        <div class="image">
+            <p>好看的图片</p><img src="http://7xqijt.com1.z0.glb.clouddn.com/IFE%E7%AC%91%E8%84%B8.jpg" alt="岳云鹏魔性笑脸" />
+        </div>
+        <div class="image">
+            <p>好看的图片</p><img src="http://7xqijt.com1.z0.glb.clouddn.com/IFE%E7%AC%91%E8%84%B8.jpg" alt="岳云鹏魔性笑脸" />
+        </div>
+        <div class="image">
+            <p>好看的图片</p><img src="http://7xqijt.com1.z0.glb.clouddn.com/IFE%E7%AC%91%E8%84%B8.jpg" alt="岳云鹏魔性笑脸" />
+        </div>
+        <div class="image">
+            <p>好看的图片</p><img src="http://7xqijt.com1.z0.glb.clouddn.com/IFE%E7%AC%91%E8%84%B8.jpg" alt="岳云鹏魔性笑脸" />
+        </div>
+        <div class="image">
+            <p>好看的图片</p><img src="http://7xqijt.com1.z0.glb.clouddn.com/IFE%E7%AC%91%E8%84%B8.jpg" alt="岳云鹏魔性笑脸" />
+        </div>
+    </div>
+</div>
+<div class="article">
+    <p class="title-1st">最后一篇文章一级标题</p>
+    <p class="title-2ed">文章二级标题</p>
+    <p class="author">文章作者&nbsp;文章发表时间</p>
+    <ol>
+        <li>排名1</li>
+        <li>排名2</li>
+        <li>排名3</li>
+    </ol>
+    <p>下面是一个表格</ p>
+    <div class="table1">
+        <table>
+            <tbody>
+            <tr>
+                <th>表头</th>
+                <th>表头</th>
+                <th>表头</th>
+            </tr>
+            <tr>
+                <td>表内容单元格</td>
+                <td>表内容单元格</td>
+                <td>操作</td>
+            </tr>
+            <tr>
+                <td>表内容单元格</td>
+                <td>表内容单元格</td>
+                <td>操作</td>
+            </tr>
+            <tr>
+                <td>表内容单元格</td>
+                <td>表内容单元格</td>
+                <td>操作</td>
+            </tr>
+            <tr class="total">
+                <td>总计</td>
+                <td colspan="2">1000</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="article">
+    <p class="title-1st active">这里以后是一个侧栏，这是侧栏的标题</p>
+    <div class="table2">
+        <table>
+            <tr>
+                <td class="left">请输入邮箱地址：</td>
+                <td>
+                    <input type="text" value="这是一个文本输入框" />
+                </td>
+                </p>
+            </tr>
+            <tr>
+                <td></td>
+                <td><span class="hint">邮箱地址请按要求格式输入</span></td>
+            </tr>
+            <tr>
+                <td class="left">请输入密码：</td>
+                <td>
+                    <input type="password" value="这是一个密码框" />
+                </td>
+            </tr>
+            <tr>
+                <td class="left">请重复输入密码：</td>
+                <td>
+                    <input type="password" value="这是一个密码框" />
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><span class="hint">密码请输入6-16位英文数字</span></td>
+            </tr>
+            <tr>
+                <td class="left">性别：</td>
+                <td>
+                    <input type="radio" name="sex" value="男" />男
+                    <input type="radio" name="sex" value="女" />女</td>
+            </tr>
+            <tr>
+                <td class="left">城市：</td>
+                <td>
+                    <select>
+                        <option value="北京">北京</option>
+                        <option value="上海">上海</option>
+                        <option value="广州">广州</option>
+                        <option value="深圳">深圳</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="left">爱好：</td>
+                <td>
+                    <input type="checkbox" value="运动" />运动
+                    <input type="checkbox" value="艺术" />艺术
+                    <input type="checkbox" value="科学" />科学</td>
+            </tr>
+            <tr>
+                <td class="left">个人描述：</td>
+                <td>
+                    <textarea cols="100%" rows="5">这是一个多行输入框，输入您的个人描述</textarea>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="submit">
+        <p>确认提交</p>
+    </div>
+</div>
+<div class="footer">
+    <p>版权所有©</p>
+</div>
+</body>
+</html>
