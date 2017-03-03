@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            float: left;
+            margin-left: 30px;
+            width: 50px;
+            height: 50px;
+            border: solid red;
+            background:red;
+            text-align: center;
+            position: relative;
+            left: 30%; top: 150px;
+        }
+    </style>
+</head>
+<body>
+<span id="span1">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+</span>
+<input id= "itext" type="text" >
+<input id="zr" type="button" value="左侧入">
+<input id="zc" type="button" value="左侧出">
+<input id="yr" type="button" value="右侧入">
+<input id="yc" type="button" value="右侧出">
+</body>
+<script>
+ var ozr =document.getElementById('zr');
+ var otext = document.getElementById('itext');
+ var ospan = document.getElementById('span1');
+
+ var odiv = ospan.getElementsByTagName('div')[0];
+ var oyr = document.getElementById('yr');
+ var ozc = document.getElementById('zc');
+ var oyc = document.getElementById('yc');
+ ozr.onclick = function () {
+     var ndiv = document.createElement('div');
+ ndiv.innerHTML = otext.value;
+ ospan.insertBefore(ndiv,ospan.firstElementChild);
+ };
+ oyr.onclick = function () {
+     var xdiv = document.createElement('div');
+     ospan.appendChild(xdiv);
+     xdiv.innerHTML = otext.value;
+ };
+ ozc.onclick = function() {
+     alert(odiv.innerHTML);
+     ospan.removeChild(ospan.firstElementChild);
+
+ };
+ oyc.onclick =function(){
+     alert(ospan.lastElementChild.innerHTML);
+     ospan.removeChild(ospan.lastElementChild);
+ };
+</script>
+</html>
