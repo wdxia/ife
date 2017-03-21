@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>响应式网格（栅格化）布局</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        border: 1px solid #999;
+        padding: 10px;
+    }
+    .row:before,
+    .row:after{
+        content:"";
+        display: table;
+        clear: both;
+    }
+    [class*='col-']{                                /*正则的CSS*/
+        float: left;
+        height: 50px;
+        background-color: #eee;
+        border: 1px solid #999;
+        margin: 10px;
+        font-size: 12px;
+        text-align: center;
+    }
+    @media screen and (min-width: 768px){
+        .col-sm-1{width: calc(8.33333% - 20px);}
+        .col-sm-2{width: calc(16.66666% - 20px);}
+        .col-sm-3{width: calc(25% - 20px);}         /* 四个 */
+        .col-sm-4{width: calc(33.33333% - 20px);}   /*三个*/
+        .col-sm-6{width: calc(50% - 20px);}         /*两个*/
+    }
+    @media screen and (max-width: 768px){
+        .col-xs-2{width: calc(16.66666% - 20px);}
+        .col-xs-3{width: calc(25% - 20px);}
+        .col-xs-6{width: calc(50% - 20px);}
+        .col-xs-8{width: calc(66.66666% - 20px);}
+        .col-xs-12{width: calc(100% - 20px);}
+    }
+    </style>
+
+
+</head>
+
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4 col-xs-6"><p>col-sm-4 col-xs-6</p></div>
+        <div class="col-sm-4 col-xs-6"><p>col-sm-4 col-xs-6</p></div>
+        <div class="col-sm-4 col-xs-12"><p>col-sm-4 col-xs-12</p></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3 col-xs-3"><p>col-sm-3 col-xs-3</p></div>
+        <div class="col-sm-6 col-xs-6"><p>col-sm-6 col-xs-6</p></div>
+        <div class="col-sm-3 col-xs-3"><p>col-sm-3 col-xs-3</p></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-1 col-xs-2"><p>col-sm-1 col-xs-2</p></div>
+        <div class="col-sm-1 col-xs-2"><p>col-sm-1 col-xs-2</p></div>
+        <div class="col-sm-2 col-xs-8"><p>col-sm-2 col-xs-8</p></div>
+        <div class="col-sm-2 col-xs-3"><p>col-sm-2 col-xs-3</p></div>
+        <div class="col-sm-6 col-xs-3"><p>col-sm-6 col-xs-3</p></div>
+    </div>
+</div>
+</body>
+
+</html>
