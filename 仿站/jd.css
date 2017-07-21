@@ -1,0 +1,251 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: #f6f6f6;
+    font-size: 12px;
+    color: #666666;
+    font-weight: 400;
+}
+.content li{
+    list-style: none;
+}
+.content a{
+    text-decoration: none;
+    color: #666666;
+}
+.content a:hover{
+    color: red;
+}
+#shortcut{
+    width: 100%;
+    height: 31px;
+    background-color: #e3e4e5;
+    border-bottom: 1px solid #ededed;
+}
+#shortcut .content{
+    height: 30px;
+    line-height: 30px;
+    width: 1190px;
+    margin:auto;
+    display: block;
+}
+.fl{
+    float: left;
+    width: 258px;
+    margin:auto;
+}
+.fl li{
+    float: right;
+    line-height: 30px;
+    list-style: none;
+}
+.fr{
+    float: right;
+    width: 726px;
+}
+.fr li{
+    float: left;
+    list-style: none;
+    line-height: 30px;
+    position: relative;
+}
+
+.fr li span{
+    border-left: 1px solid #dddddd;
+    display: block;
+    height: 12px;
+    width: 10px;
+    float: left;
+    margin-top:8px;
+    margin-left:10px;
+    overflow: hidden;
+}
+
+
+#header{
+    height: 140px;
+    width: 100%;
+}
+
+#header .content{
+    position: relative;
+    width: 1190px;
+    height: 140px;
+    margin: auto;
+}
+#header .content .logo {
+    width: 190px;
+    height: 170px;
+}
+#header .content .logo a img{
+    position: absolute;
+    left: 0;
+    top: -31px;
+    width: 190px;
+    height: 170px;
+}
+
+
+.search-m{
+     height: 60px;
+ }
+.search-m .form{
+    position: absolute;
+    left: 320px;
+    top: 25px;
+    width: 550px;
+    height: 35px;
+}
+
+.search-m .text {
+    left: 0;
+    padding: 4px;
+    width: 490px;
+    height: 25px;
+    border: 1px solid #f10215;
+    line-height: 25px;
+    font-size: 14px;
+    color: #989898;
+}
+.search-m .button {
+    right: 0;
+    width: 50px;
+    height: 35px;
+    line-height: 35px;
+    border: none;
+    background-color: #f10215;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    position: absolute;
+    top: 0;
+}
+
+#buyCar{
+    position: absolute;
+    right: 99px;
+    top: 25px;
+    width: 190px;
+    height: 35px;
+    background-color: #ffffff;
+    border: 1px solid #e3e4e5;
+    text-align: center;
+}
+#buyCar .buyCar-icon{
+
+
+    position: relative;
+    overflow: hidden;
+
+}
+#buyCar .buyCar-icon a{
+    line-height: 33px;
+    color: red;
+}
+
+#hotWords{
+    overflow: hidden;
+    position: absolute;
+    left: 370px;
+    top: 90px;
+    width: 550px;
+    height: 20px;
+
+}
+#hotWords a{
+    line-height: 20px;
+    color: #989898;
+    text-decoration: none;
+    margin-left: 5px;
+}
+#hotWords a:hover{
+    color: #f10215;
+}
+
+
+#navItems{
+    position: absolute;
+    overflow: hidden;
+    top: 140px;
+    left: 260px;
+    width: 790px;
+    height: 40px;
+}
+#navItems a{
+
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 40px;
+    height: 40px;
+    font-weight: 700;
+    color: #555555;
+}
+#navItems a:hover{
+    color: #f10215;
+}
+#navItems li{
+    list-style: none;
+    float: left;
+    margin-left: 30px;
+}
+#navItems #nav-g1{
+    float: left;
+}
+#navItems #nav-g2{
+    float: left;
+}
+#navItems #nav-g3 {
+    float: left;
+}
+
+
+
+
+
+
+#middle{
+    position: relative;
+    height: 480px;
+    margin-bottom: 10px;
+}
+#middle .mid_left{
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    height: 100%;
+    width: 190px;
+}
+#middle .menu-1{
+    overflow: hidden;
+    height: 448px;
+    background-color: #6e6568;
+    color: #fff;
+}
+#middle li{
+    list-style: none;
+    height: 28px;
+    line-height: 28px;
+}
+#middle .menu-2{
+    background-color: #6e6568;
+    color: #fff;
+}
+#middle .menu-3{
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: none;
+
+}
+
+#middle .mid_left_pic{
+    position: absolute;
+    height: 480px;
+    top: 0;
+    left: 0;
+}
+#middle .mid_left_pic a{
+    background: url(//img30.360buyimg.com/da/jfs/t6640/287/348840885/45032/723c850b/593e4caaNe40b303b.png) no-repeat 50% 0;
+    height: 480px;
+}
